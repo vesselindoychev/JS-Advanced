@@ -1,4 +1,4 @@
-function solve(arr) {
+function storeCatalogue(arr) {
     let products = {};
     let chars = [];
     for (let i of arr) {
@@ -30,7 +30,7 @@ function solve(arr) {
     }
 }
 
-solve(['Appricot : 20.4',
+storeCatalogue(['Appricot : 20.4',
 'Fridge : 1500',
 'TV : 1499',
 'Deodorant : 10',
