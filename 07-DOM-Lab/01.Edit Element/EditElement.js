@@ -6,3 +6,4 @@ function editElement(ref, match, replacer) {
     ref.textContent = text;
 
 }
+
