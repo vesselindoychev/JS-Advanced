@@ -1,7 +1,6 @@
-city = {
-    'cityName': {'firstName': 'sofia', 
-                    'secondName': 'plovdiv'},
-    'population': 10
-}
+let string = 'I am Vesko from Plovdiv.    ';
 
-console.log(city['cityName']['firstName']);
+console.log(string.trim())
+console.log(string.length);
+
+console.log(string.length);
