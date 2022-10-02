@@ -17,3 +17,5 @@ function deleteByEmail() {
     console.log(tableRows);
 
 }
+
+

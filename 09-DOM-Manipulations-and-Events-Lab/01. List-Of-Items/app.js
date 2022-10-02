@@ -9,3 +9,5 @@ function addItem() {
     inputText.value = '';
 
 }
+
+
