@@ -1,1 +1,2 @@
-console.log(100 - 23);
+let word = 'aha baha';
+console.log(word.length);

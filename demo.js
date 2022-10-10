@@ -1,11 +1,7 @@
-document.getElementById('click-me').addEventListener('click', function (event) {
-    let btn = event.target;
-    btn.textContent = Number(btn.textContent) + 1
-    
-});
-let input = document.querySelector('input');
+let arr = ['hello', 'again', 'hello']
 
-
-
-
-
+for (let i of arr) {
+    if (i === 'hello') {
+        arr.pop(i);
+    }
+}
