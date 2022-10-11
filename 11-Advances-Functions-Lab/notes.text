@@ -1,4 +1,4 @@
-1. 'let' ives in the curly brackets and cannot be accessed before init
+1. 'let' lives in the curly brackets and cannot be accessed before init
 2. Function declaration can be executed in the current function scope
 3. Function has access to the outer functio scope but not to the inner one
 4. Arrow functions do not have their own 'this'. They use the 'this' from their outer function.

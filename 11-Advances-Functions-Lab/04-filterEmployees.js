@@ -1,22 +1,33 @@
-function filterEmployees(data, criteria) {
-    data = JSON.parse(data);
-    let [actualCriteria, searchedCriteria] = criteria.split('-');
-    let counter = 0;
-    for (let obj of data) {
-        let buff = '';
+// function filterEmployees(data, criteria) {
+//     data = JSON.parse(data);
+//     let [actualCriteria, searchedCriteria] = criteria.split('-');
+//     let counter = 0;
+//     for (let obj of data) {
+//         let buff = '';
         
-        if (obj[actualCriteria] === searchedCriteria) {
-            buff += `${counter}. ${obj.first_name} ${obj.last_name} - ${obj.email}`
-            console.log(buff);
-            counter += 1
-        }
+//         if (obj[actualCriteria] === searchedCriteria) {
+//             buff += `${counter}. ${obj.first_name} ${obj.last_name} - ${obj.email}`
+//             console.log(buff);
+//             counter += 1
+//         }
         
-    }
+//     }
     
+// }
+
+
+function solve(data, criteria) {
+  data = JSON.parse(data);
+  let [prop, value] = criteria.split('-')
+
+  data
+    .filter(x => x[prop] === value) 
+    .map((x, i) => `${i}. ${x.first_name} ${x.last_name} - ${x.email}`)
+    .forEach(x => console.log(x))
 }
 
 
-filterEmployees(`[{
+solve(`[{
     "id": "1",
     "first_name": "Kaylee",
     "last_name": "Johnson",
