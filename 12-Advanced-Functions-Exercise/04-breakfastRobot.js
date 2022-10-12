@@ -34,7 +34,7 @@ function solution() {
                 for (let key in recipes[recipe]) {
                     if (recipes[recipe][key] * quantity > ingredientsStore[key]) {
                         isDone = false;
-                        text = `Error: not enough ${key} in stock `
+                        text = `Error: not enough ${key} in stock`
                         break
                     } 
                     copyIngredientStore[key] -= (quantity * recipes[recipe][key])
@@ -45,11 +45,35 @@ function solution() {
                 ingredientsStore = copyIngredientStore;
                 return 'Success'
             },
-            report: () => console.log('report')
+            report: () => {
+                let reportResult = [];
+                for (let [key, value] of Object.entries(ingredientsStore)) {
+                    reportResult.push(`${key}=${value}`)
+                }
+                return reportResult.join(' ')
+            }
         }
     }   
 }
 
 let manager = solution (); 
-console.log(manager("restock flavour 50")); 
-console.log(manager("prepare lemonade 4")); 
+// console.log(manager("restock flavour 50")); 
+// console.log(manager("prepare lemonade 4")); 
+// console.log(manager("report")); 
+
+console.log(manager('restock flavour 50'))
+console.log(manager('prepare lemonade 4'))
+console.log(manager('restock carbohydrate 10'))
+console.log(manager('restock flavour 10'))
+console.log(manager('prepare apple 1'))
+console.log(manager('restock fat 10'))
+console.log(manager('prepare burger 1'))
+console.log(manager('report'))
+ 
+
+
+
+
+
+
+
