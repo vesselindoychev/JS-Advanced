@@ -1,4 +1,3 @@
-const {printDeckOfCards} = require('./13-Unit-Testing-and-Error-Handling/03-deckOfCards')
+let a = 1.2;
 
-
-printDeckOfCards(cards);
+console.log(Number.isInteger(a));
