@@ -1,13 +1,4 @@
-class Person {
-    constructor (fName, lName) {
-        this.fName = fName;
-        this.lName = lName; 
-    }
+let arr = [1, 2, 3];
 
-    get fullName() {
-        return `${this.fName} ${this.lName}`;
-    }
-}
-
-let person = new Person('Vesko', 'Doychev');
-console.log(person.fullName)
+arr = arr.splice(0, 1);
+console.log(arr)
