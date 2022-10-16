@@ -69,3 +69,5 @@ class PaymentPackage {
     }
   }
   
+
+module.exports = {PaymentPackage}
