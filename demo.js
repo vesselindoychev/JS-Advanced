@@ -1,3 +1,5 @@
-let text = 'mystring';
+let input = ['1', '1']
 
-console.log(text.startsWith('my'))
+if (isNaN(input)) {
+    console.log('The input is not a number!')
+}
